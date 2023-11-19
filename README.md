@@ -81,12 +81,12 @@ Given a quaternion $p = \left\langle e_0, e_1, e_2, e_3\right\rangle$ representi
 $$
 \underline{\underline{R}}(\underline{p})
     =
-\left[\begin{array}{ccc}
+\left\[\begin{array}{ccc}
         e_0^2+e_1^2-e_2^2-e_3^2 & 2 e_1 e_2-2 e_0 e_3 & 2 e_0 e_2+2 e_1 e_3 \\
         2 e_0 e_3+2 e_1 e_2 & e_0^2-e_1^2+e_2^2-e_3^2 & 2 e_2 e_3-2 e_0 e_1 \\
         2 e_1 e_3-2 e_0 e_2 & 2 e_0 e_1+2 e_2 e_3 & e_0^2-e_1^2-e_2^2+e_3^2
         \end{array}
-\right]
+\right\]
 $$
 
 The `quaternionToRotationMatrix()` function in the `quaternion.py` module performs this conversion.
@@ -102,7 +102,19 @@ R=
     \end{array}\right]
 $$
 
+The quaternion defining the orientation equivalent to this rotation matrix can be defined in 2 steps.
 
+**Step 1:** We first compute $\left|q_0\right|, \left|q_1\right|, \left|q_2\right|, \left|q_3\right|$ but not their signs.
+$$
+\begin{aligned}
+        &\left|q_0\right|=\sqrt{\frac{1+r_{11}+r_{22}+r_{33}}{4}}\\
+        &\left|q_1\right|=\sqrt{\frac{1+r_{11}-r_{22}-r_{33}}{4}}\\
+        &\left|q_2\right|=\sqrt{\frac{1-r_{11}+r_{22}-r_{33}}{4}}\\
+        &\left|q_3\right|=\sqrt{\frac{1-r_{11}-r_{22}+r_{33}}{4}}
+\end{aligned}
+$$
+
+**Step 2:** Identify the signs by finding the largest absolute value of q0, q1, q2, q3 and assuming its sign is positive. We then calculate the remaining components of the quaternion as table below. Division by the largest amplitude reduces errors in numerical numerical accuracy.
 
 
 
