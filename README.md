@@ -108,6 +108,7 @@ $$
 The quaternion defining the orientation equivalent to this rotation matrix can be defined in 2 steps.
 
 **Step 1:** We first compute $\left|q_0\right|, \left|q_1\right|, \left|q_2\right|, \left|q_3\right|$ but not their signs.
+
 $$
 \begin{aligned}
         &\left|q_0\right|=\sqrt{\frac{1+r_{11}+r_{22}+r_{33}}{4}}\\
