@@ -17,12 +17,14 @@ $$
 \underline{p}=\left\langle\begin{array}{llll} e_0 & e_1 & e_2 & e_3 \end{array}\right\rangle^t=e_0+\underline{e}
 $$
 
-- Axe de rotation:  
+- Axe de rotation:
+
 $$
 \underline{e}^t=\left\langle e_1, e_2, e_3\right\rangle^t
 $$
 
 - Angle de rotation $\theta$ :
+  
 $$
 \left\{
     \begin{aligned}
@@ -33,6 +35,7 @@ $$
 $$
 
 - Équation de la normalisation du quaternion:
+
 $$
     e_0^2+e_1^2+e_2^2+e_3^2=1
 $$
