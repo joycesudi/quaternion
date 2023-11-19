@@ -44,7 +44,11 @@ $$
 Compact writing compared to the rotation matrix ● Numerical stability ● No singularity (Cardan blocking)
 
 ### Combining rotations
-Let $q_1 = \left\langle e_0, \underline{e}\right\rangle$ and q2 = ⟨u0, u⟩, two quaternions each representing a given rotation, the product defines the sequence of rotations q1 then q2.
+Let $q_1 = \left\langle e_0, \underline{e}\right\rangle$ and $q_2 = \left\langle u_0, \underline{u}\right\rangle$, two quaternions each representing a given rotation, the product defines the sequence of rotations $q_1$ then $q_2$.
+
+$$
+q_2 \cdot q_1 = \left\langle u_0, \underline{u}\right\rangle \left\langle e_0, \underline{e}\right\rangle = \left\langle u_0 e_0 - \underline{u}^{T} \underline{e} \quad, \quad u_0 \underline{e} + e_0 \underline{u} + \underline{u} \times \underline{e}\right\rangle
+$$
 
 ## Converting from one representation of a solid's orientation to another
 
