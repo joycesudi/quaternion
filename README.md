@@ -79,7 +79,7 @@ The `quaternionToAxisAngle()` function in the `quaternion.py` module performs th
 Given a quaternion $p = \left\langle e_0, e_1, e_2, e_3\right\rangle$ representing the orientation of a given solid, the 3x3 matrix corresponding to this orientation is given by :
 
 $$
-\underline{\underline{R}}(\underline{p}) \:
+\underline{\underline{R}}(\underline{p})
     =
 \left[\begin{array}{ccc}
         e_0^2+e_1^2-e_2^2-e_3^2 & 2 e_1 e_2-2 e_0 e_3 & 2 e_0 e_2+2 e_1 e_3 \\
