@@ -121,7 +121,7 @@ $$
 **Step 2:** Identify the signs by finding the largest absolute value of $q_0, q_1, q_2, q_3$ and assuming its sign is positive. We then calculate the remaining components of the quaternion as table below. Division by the largest amplitude reduces errors in numerical numerical accuracy.
 
 $$
-\begin{array}{|c|c|c|c|}
+\begin{tabular}{|c|c|c|c|}
          \hline 
          \text { If } q_0 \text {  is the largest: } & \text { If } \mathrm{q}_1 \text {  is the largest: } & \text { If } \mathrm{q}_2 \text {  is the largest: } & \text { If } \mathrm{q}_3 \text {  is the largest: } \\
         \hline 
@@ -131,7 +131,7 @@ $$
         \hline 
         q_3=\frac{r_{21}-r_{12}}{4 q_0} & q_3=\frac{r_{13}+r_{31}}{4 q_1} & q_3=\frac{r_{23}+r_{32}}{4 q_2} & q_2=\frac{r_{23}+r_{32}}{4 q_3} \\
         \hline
-\end{array}
+\end{tabular}
 $$
 
 The reason for this ambiguity over the signs of the quaternion components is that the quaternions $\left(q_0, q_1, q_2, q_3\right)$ and $\left(-q_0, -q_1, -q_2, -q_3\right)$ define the same rotation.
