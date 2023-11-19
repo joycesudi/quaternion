@@ -104,7 +104,7 @@ $$
 
 The quaternion defining the orientation equivalent to this rotation matrix can be defined in 2 steps.
 
-$\textbf{\textit{Step 1:}} We first compute $\left|q_0\right|, \left|q_1\right|, \left|q_2\right|, \left|q_3\right|$ but not their signs.
+$\textbf{\textit{Step 1:}}$ We first compute $\left|q_0\right|, \left|q_1\right|, \left|q_2\right|, \left|q_3\right|$ but not their signs.
 
 
 
