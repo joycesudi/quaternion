@@ -18,23 +18,26 @@ $$
 $$
 
 - Axe de rotation:  
-$\underline{e}^t=\left\langle e_1, e_2, e_3\right\rangle^t$
+$$
+\underline{e}^t=\left\langle e_1, e_2, e_3\right\rangle^t
+$$
 
 - Angle de rotation $\theta$ :
-$\left\{
+$$
+\left\{
     \begin{aligned}
         e_0 & = \cos \frac{\theta}{2}\\
         |\underline{e}| & = \sin \frac{\theta}{2}
     \end{aligned}
     \right.
-$
+$$
 
 - Équation de la normalisation du quaternion:
-$
+$$
     e_0^2+e_1^2+e_2^2+e_3^2=1
-$
+$$
 
-### ADVANTAGES
+### Advantages
 Compact writing compared to the rotation matrix ● Numerical stability ● No singularity (Cardan blocking)
 
 ### Combining rotations
