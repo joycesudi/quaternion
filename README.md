@@ -51,8 +51,7 @@ q_2 \cdot q_1 = \left\langle u_0, \underline{u}\right\rangle \left\langle e_0, \
 $$
 
 ## Converting from one representation of a solid's orientation to another
-
-### Axis-angle to quaternion conversion
+### Axis-angle to quaternion 
 Knowing the axis and angle of a rotation $\left\langle \theta, x, y, z\right\rangle$, we can convert it to a quaternion $q = \left\langle q_0, q_1, q_2, q_3\right\rangle$ defining the same rotation as follows:
 
 $$
@@ -60,6 +59,24 @@ $$
 $$
 
 The axisAngleToQuaternion() function in the `quaternion.py` module performs this conversion.
+
+### Quaternion to axis-angle 
+Given a quaternion p = ⟨e0, e1, e2, e3⟩, the axis of rotation u and the angle of rotation θ can be obtained from the following equations:
+
+$$
+\left\{
+        \begin{aligned}
+                \underline{u} & =\frac{\underline{e}}{|\underline{e}|} \\
+                \theta & =2 \arctan \left(\frac{|\underline{e}|}{e_0}\right) \quad \text { with } \quad \underline{e}^t=\left\langle e_1, e_2, e_3\right\rangle^t 
+        \end{aligned}
+        \label{quaternionToAxisAngle-Equation}
+\right.
+$$
+
+The quaternionToAxisAngle() function in the `quaternion.py` module performs this conversion.
+
+
+
 
 
 
