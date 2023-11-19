@@ -121,7 +121,7 @@ $$
 **Step 2:** Identify the signs by finding the largest absolute value of $q_0, q_1, q_2, q_3$ and assuming its sign is positive. We then calculate the remaining components of the quaternion as table below. Division by the largest amplitude reduces errors in numerical numerical accuracy.
 
 <div align="center">
-<img align="center" src="https://github.com/joycesudi/quaternion/blob/main/images/rotation-matrix-to-quaternion-table.png" width="60%">
+<img align="center" src="https://github.com/joycesudi/quaternion/blob/main/images/rotation-matrix-to-quaternion-table.png" width="80%">
 </div>
 
 The reason for this ambiguity over the signs of the quaternion components is that the quaternions $\left(q_0, q_1, q_2, q_3\right)$ and $\left(-q_0, -q_1, -q_2, -q_3\right)$ define the same rotation.
