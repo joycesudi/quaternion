@@ -122,10 +122,14 @@ $$
 
 $$
 \begin{array}{|c|c|c|c|}
-         \hline \text { If } q_0 \text {  is the largest: } & \text { If } \mathrm{q}_1 \text {  is the largest: } & \text { If } \mathrm{q}_2 \text {  is the largest: } & \text { If } \mathrm{q}_3 \text {  is the largest: } \\
-        \hline q_1=\frac{r_{32}-r_{23}}{4 q_0} & q_0=\frac{r_{32}-r_{23}}{4 q_1} & q_0=\frac{r_{13}-r_{31}}{4 q_2} & q_0=\frac{r_{21}-r_{12}}{4 q_3} \\
-        \hline q_2=\frac{r_{13}-r_{31}}{4 q_0} & q_2=\frac{r_{12}+r_{21}}{4 q_1} & q_1=\frac{r_{12}+r_{21}}{4 q_2} & q_1=\frac{r_{13}+r_{31}}{4 q_3} \\
-        \hline q_3=\frac{r_{21}-r_{12}}{4 q_0} & q_3=\frac{r_{13}+r_{31}}{4 q_1} & q_3=\frac{r_{23}+r_{32}}{4 q_2} & q_2=\frac{r_{23}+r_{32}}{4 q_3} \\
+         \hline 
+         \text { If } q_0 \text {  is the largest: } & \text { If } \mathrm{q}_1 \text {  is the largest: } & \text { If } \mathrm{q}_2 \text {  is the largest: } & \text { If } \mathrm{q}_3 \text {  is the largest: } \\
+        \hline 
+        q_1=\frac{r_{32}-r_{23}}{4 q_0} & q_0=\frac{r_{32}-r_{23}}{4 q_1} & q_0=\frac{r_{13}-r_{31}}{4 q_2} & q_0=\frac{r_{21}-r_{12}}{4 q_3} \\
+        \hline 
+        q_2=\frac{r_{13}-r_{31}}{4 q_0} & q_2=\frac{r_{12}+r_{21}}{4 q_1} & q_1=\frac{r_{12}+r_{21}}{4 q_2} & q_1=\frac{r_{13}+r_{31}}{4 q_3} \\
+        \hline 
+        q_3=\frac{r_{21}-r_{12}}{4 q_0} & q_3=\frac{r_{13}+r_{31}}{4 q_1} & q_3=\frac{r_{23}+r_{32}}{4 q_2} & q_2=\frac{r_{23}+r_{32}}{4 q_3} \\
         \hline
 \end{array}
 $$
