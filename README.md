@@ -91,6 +91,36 @@ $$
 
 The `quaternionToRotationMatrix()` function in the `quaternion.py` module performs this conversion.
 
+### Rotation matrix to quaternion 
+Consider the following rotation matrix R:
+$$
+R=
+    \left[\begin{array}{lll}
+        r_{11} & r_{12} & r_{13} \\
+        r_{21} & r_{22} & r_{23} \\
+        r_{31} & r_{32} & r_{33}
+    \end{array}\right]
+$$
+
+The quaternion defining the orientation equivalent to this rotation matrix can be defined in 2 steps.
+
+$\textbf{\textit{Step 1:}} We first compute $\left|q_0\right|, \left|q_1\right|, \left|q_2\right|, \left|q_3\right|$ but not their signs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
