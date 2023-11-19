@@ -11,19 +11,19 @@ To avoid the gimbal lock phenomenon (representation singularity) that occurs for
 Introduced by Irish mathematician William R. Hamilton (1843), quaternions are hypercomplex numbers using 4 variables (a scalar real part and 3 imaginary components) to represent the orientation of a rigid body.
 the orientation of a rigid body. This representation introduces a holonomic constraint equation related to the normalization of the quaternion.
 
-Le quaternion est donné par le quadruplet :
+Quaternion is given by the quadruplet :
 
 $$
 \underline{p}=\left\langle\begin{array}{llll} e_0 & e_1 & e_2 & e_3 \end{array}\right\rangle^t=e_0+\underline{e}
 $$
 
-- Axe de rotation:
+- Axis of rotation:
 
 $$
 \underline{e}^t=\left\langle e_1, e_2, e_3\right\rangle^t
 $$
 
-- Angle de rotation $\theta$ :
+- Angle of rotation $\theta$ :
   
 $$
 \left\{
@@ -34,7 +34,7 @@ $$
     \right.
 $$
 
-- Équation de la normalisation du quaternion:
+- Quaternion normalization equation:
 
 $$
     e_0^2+e_1^2+e_2^2+e_3^2=1
@@ -44,5 +44,12 @@ $$
 Compact writing compared to the rotation matrix ● Numerical stability ● No singularity (Cardan blocking)
 
 ### Combining rotations
+Let $q_1 = \left\langle e_0, \underline{e}\right\rangle$ and q2 = ⟨u0, u⟩, two quaternions each representing a given rotation, the product defines the sequence of rotations q1 then q2.
 
 ## Converting from one representation of a solid's orientation to another
+
+
+
+
+
+
