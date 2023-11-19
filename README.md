@@ -81,12 +81,12 @@ Given a quaternion $p = \left\langle e_0, e_1, e_2, e_3\right\rangle$ representi
 $$
 \underline{\underline{R}}(\underline{p})
     =
-\left\[\begin{array}{ccc}
+\left[\begin{array}{ccc}
         e_0^2+e_1^2-e_2^2-e_3^2 & 2 e_1 e_2-2 e_0 e_3 & 2 e_0 e_2+2 e_1 e_3 \\
         2 e_0 e_3+2 e_1 e_2 & e_0^2-e_1^2+e_2^2-e_3^2 & 2 e_2 e_3-2 e_0 e_1 \\
         2 e_1 e_3-2 e_0 e_2 & 2 e_0 e_1+2 e_2 e_3 & e_0^2-e_1^2-e_2^2+e_3^2
         \end{array}
-\right\]
+\right]
 $$
 
 The `quaternionToRotationMatrix()` function in the `quaternion.py` module performs this conversion.
