@@ -1,5 +1,5 @@
 ## Conversion between quaternions and other rotation parametrizations
-This Python module provides conversion functions between quaternions and other rotation parametrizations.
+This Python module provides conversion functions between quaternions and other rotation parameterizations (axis-angle, rotation matrix, Euler angles).
 > See also the pure-python package [quaternionic](https://github.com/moble/quaternionic).
 
 ## Parameterizations of rotations
