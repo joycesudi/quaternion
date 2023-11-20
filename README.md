@@ -154,6 +154,24 @@ $$
 The `eulerAnglesToQuaternion()` function in the `quaternion.py` module performs this conversion.
 
 ### Quaternion to Euler angles
+The conversion of a quaternion into Euler angles (using the definition of Euler angles given in the previous paragraph) is given by the following equations:
+
+$$
+\begin{aligned}
+        & \text {roll}=u=\tan ^{-1}\left(\frac{2\left(q_0 q_1+q_2 q_3\right)}{q_0^2-q_1^2-q_2^2+q_3^2}\right)=\operatorname{atan} 2\left[2\left(q_0 q_1+q_2 q_3\right), q_0^2-q_1^2-q_2^2+q_3^2\right] \\
+        & \text {pitch}=v=\sin ^{-1}\left(2\left(q_0 q_2-q_1 q_3\right)\right)=\operatorname{asin}\left[2\left(q_0 q_2-q_1 q_3\right)\right] \\
+        & \text {yaw}=w=\tan ^{-1}\left(\frac{2\left(q_0 q_3+q_1 q_2\right)}{q_0^2+q_1^2-q_2^2-q_2^2}\right)=\operatorname{atan} 2\left[2\left(q_0 q_3+q_1 q_2\right), q_0^2+q_1^2-q_2^2-q_3^2\right]
+\end{aligned}
+$$
+
+#### Gimbal lock
+Euler angles are susceptible to Cardan blocking (singularity of representation). The preceding equations provide a general solution for determining Euler angles. In the special case where the pitch angle v is equal to +90° or -90°, it becomes impossible to calculate the other 2 angles (roll and yaw), as the function `atan2()` is not defined for the two null arguments. This is because, for a pitch angle of +90° or -90°, the roll and yaw axes are aligned. There is no single solution in this configuration: any orientation can be described using an infinite number of combinations of yaw and roll angles.
+
+To manage the Cardan lock, we first determine the value of the pitch angle. Depending on whether it is +90° or -90°, we calculate the other 2 angles.
+
+
+The `quaternionToEulerAngles()` function in the `quaternion.py` module performs this conversion.
+`Of the rotation parameterizations presented, only Euler angles are susceptible to Cardan blocking, quaternions and rotation matrices are not.`
 
 
 
