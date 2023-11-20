@@ -127,13 +127,33 @@ $$
 The reason for this ambiguity over the signs of the quaternion components is that the quaternions $\left(q_0, q_1, q_2, q_3\right)$ and $\left(-q_0, -q_1, -q_2, -q_3\right)$ define the same rotation.
 The `rotationMatrixToQuaternion()` function in the `quaternion.py` module performs this conversion.
 
+### Euler angles to quaternion
+Introduced by Swiss mathematician and physicist Leonhard Euler, the three Euler angles (roll, pitch, yaw) are used to define the orientation of a rigid body. Roll can be defined as the orientation with respect to the X axis, pitch as the orientation with respect to the Y axis, and yaw as the orientation with respect to the Z axis.
 
+There are dozens of mutually exclusive ways of defining Euler angles (Conventions XYX, XYZ, XZX, XZY, YXY, YXZ, YZX, YZY, ZXY, ZXZ, ZYX, ZYZ). We therefore need to define which convention is used in our code.
 
+We have used the following definition of Euler angles in the developed software.
+- Variant of Tait-Bryan angles
+- Yaw-pitch-roll rotation order (ZYX convention), rotating respectively around axes
+Z, Y and X axes
+- Intrinsic rotation (axes move with each rotation)
+- Active rotation (the point is rotated, not the coordinate system)
+- Direct coordinate system (right-hand rule for vector product)
 
+Based on this definition, let u (roll angle), v (pitch angle) and w (yaw angle) define a given orientation, the equivalent quaternion is determined as follows:
 
+$$
+\begin{aligned}
+        & q_0=\cos\left(\frac{u}{2}\right) \cos\left(\frac{v}{2}\right) \cos\left(\frac{w}{2}\right)+\sin\left(\frac{u}{2}\right) \sin\left(\frac{v}{2}\right) \sin\left(\frac{w}{2}\right) \\
+        & q_1=\sin\left(\frac{u}{2}\right) \cos\left(\frac{v}{2}\right) \cos\left(\frac{w}{2}\right)-\cos\left(\frac{u}{2}\right) \sin\left(\frac{v}{2}\right) \sin\left(\frac{w}{2}\right) \\
+        & q_2=\cos\left(\frac{u}{2}\right) \sin\left(\frac{v}{2}\right) \cos\left(\frac{w}{2}\right)+\sin\left(\frac{u}{2}\right) \cos\left(\frac{v}{2}\right) \sin\left(\frac{w}{2}\right) \\
+        & q_3=\cos\left(\frac{u}{2}\right) \cos\left(\frac{v}{2}\right) \sin\left(\frac{w}{2}\right)-\sin\left(\frac{u}{2}\right) \sin\left(\frac{v}{2}\right) \cos\left(\frac{w}{2}\right)
+\end{aligned}
+$$
 
+The `eulerAnglesToQuaternion()` function in the `quaternion.py` module performs this conversion.
 
-
+### Quaternion to Euler angles
 
 
 
