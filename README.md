@@ -169,8 +169,12 @@ Euler angles are susceptible to Cardan blocking (singularity of representation).
 
 To manage the Cardan lock, we first determine the value of the pitch angle. Depending on whether it is +90° or -90°, we calculate the other 2 angles.
 
+<div align="center">
+<img align="center" src="https://github.com/joycesudi/quaternion/blob/main/images/rotation-matrix-to-quaternion-table.png" width="80%">
+</div>
 
 The `quaternionToEulerAngles()` function in the `quaternion.py` module performs this conversion.
+
 `Of the rotation parameterizations presented, only Euler angles are susceptible to Cardan blocking, quaternions and rotation matrices are not.`
 
 
