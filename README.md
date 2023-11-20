@@ -158,9 +158,9 @@ The conversion of a quaternion into Euler angles (using the definition of Euler 
 
 $$
 \begin{aligned}
-        & \text {roll}=u=\tan ^{-1}\left(\frac{2\left(q_0 q_1+q_2 q_3\right)}{q_0^2-q_1^2-q_2^2+q_3^2}\right)=\operatorname{atan} 2\left[2\left(q_0 q_1+q_2 q_3\right), q_0^2-q_1^2-q_2^2+q_3^2\right] \\
-        & \text {pitch}=v=\sin ^{-1}\left(2\left(q_0 q_2-q_1 q_3\right)\right)=\operatorname{asin}\left[2\left(q_0 q_2-q_1 q_3\right)\right] \\
-        & \text {yaw}=w=\tan ^{-1}\left(\frac{2\left(q_0 q_3+q_1 q_2\right)}{q_0^2+q_1^2-q_2^2-q_2^2}\right)=\operatorname{atan} 2\left[2\left(q_0 q_3+q_1 q_2\right), q_0^2+q_1^2-q_2^2-q_3^2\right]
+        & \text {roll}=u=\tan ^{-1}\left(\frac{2\left(q_0 q_1+q_2 q_3\right)}{q_0^2-q_1^2-q_2^2+q_3^2}\right)=\text {atan} 2\left[2\left(q_0 q_1+q_2 q_3\right), q_0^2-q_1^2-q_2^2+q_3^2\right] \\
+        & \text {pitch}=v=\sin ^{-1}\left(2\left(q_0 q_2-q_1 q_3\right)\right)=\text {asin}\left[2\left(q_0 q_2-q_1 q_3\right)\right] \\
+        & \text {yaw}=w=\tan ^{-1}\left(\frac{2\left(q_0 q_3+q_1 q_2\right)}{q_0^2+q_1^2-q_2^2-q_2^2}\right)=\text {atan} 2\left[2\left(q_0 q_3+q_1 q_2\right), q_0^2+q_1^2-q_2^2-q_3^2\right]
 \end{aligned}
 $$
 
@@ -170,7 +170,7 @@ Euler angles are susceptible to Cardan blocking (singularity of representation).
 To manage the Cardan lock, we first determine the value of the pitch angle. Depending on whether it is +90° or -90°, we calculate the other 2 angles.
 
 <div align="center">
-<img align="center" src="https://github.com/joycesudi/quaternion/blob/main/images/rotation-matrix-to-quaternion-table.png" width="80%">
+<img align="center" src="https://github.com/joycesudi/quaternion/blob/main/images/quaternion-to-euler-angles-gimbal-lock.png" width="60%">
 </div>
 
 The `quaternionToEulerAngles()` function in the `quaternion.py` module performs this conversion.
