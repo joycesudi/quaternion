@@ -173,7 +173,6 @@ To manage the Cardan lock, we first determine the value of the pitch angle. Depe
 <img align="center" src="https://github.com/joycesudi/quaternion/blob/main/images/quaternion-to-euler-angles-gimbal-lock.png" width="45%">
 </div>
 
-
 The `quaternionToEulerAngles()` function in the `quaternion.py` module performs this conversion.
 
 **Key notes:** Of the rotation parameterizations presented, only Euler angles are susceptible to Cardan blocking, quaternions and rotation matrices are not.
