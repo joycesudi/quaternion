@@ -54,7 +54,7 @@ $$
 Knowing the axis and angle of a rotation $\left\langle \theta, x, y, z\right\rangle$, we can convert it to a quaternion $q = \left\langle q_0, q_1, q_2, q_3\right\rangle$ defining the same rotation as follows:
 
 $$
-\underline{q}=\cos \frac{\theta}{2}+\sin \frac{\theta}{2} \underline{u} \quad \text{avec}  \quad \underline{u} = \left\langle x, y, z\right\rangle 
+\underline{q}=\cos \frac{\theta}{2}+\sin \frac{\theta}{2} \underline{u} \quad \text{with}  \quad \underline{u} = \left\langle x, y, z\right\rangle 
 $$
 
 The `axisAngleToQuaternion()` function in the `quaternion.py` module performs this conversion.
