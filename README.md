@@ -8,8 +8,7 @@ Choosing how to represent the orientation of a solid in three-dimensional space 
 To avoid the gimbal lock phenomenon (representation singularity) that occurs for some of the above parameterizations, quaternions can be used as rotation parameters.
 
 ## Quaternions as rotations
-Introduced by Irish mathematician William R. Hamilton (1843), quaternions are hypercomplex numbers using 4 variables (a scalar real part and 3 imaginary components) to represent the orientation of a rigid body.
-the orientation of a rigid body. This representation introduces a holonomic constraint equation related to the normalization of the quaternion.
+Introduced by Irish mathematician William R. Hamilton (1843), quaternions are hypercomplex numbers using 4 variables (a scalar real part and 3 imaginary components) to represent the orientation of a rigid body. This representation introduces a holonomic constraint equation related to the normalization of the quaternion.
 
 Quaternion is given by the quadruplet :
 
