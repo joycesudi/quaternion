@@ -25,12 +25,12 @@ $$
 - Angle of rotation $\theta$ :
   
 $$
-\left\{
+\left\lbrace
     \begin{aligned}
         e_0 & = \cos \frac{\theta}{2}\\
         |\underline{e}| & = \sin \frac{\theta}{2}
     \end{aligned}
-    \right.
+\right.
 $$
 
 - Quaternion normalization equation:
@@ -63,7 +63,7 @@ The `axisAngleToQuaternion()` function in the `quaternion.py` module performs th
 Given a quaternion p = ⟨e0, e1, e2, e3⟩, the axis of rotation u and the angle of rotation θ can be obtained from the following equations:
 
 $$
-\left\{
+\left\lbrace
         \begin{aligned}
                 \underline{u} & =\frac{\underline{e}}{|\underline{e}|} \\
                 \theta & =2 \arctan \left(\frac{|\underline{e}|}{e_0}\right) \quad \text { with } \quad \underline{e}^t=\left\langle e_1, e_2, e_3\right\rangle^t 
