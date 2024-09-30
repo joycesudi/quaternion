@@ -68,7 +68,6 @@ $$
                 \underline{u} & =\frac{\underline{e}}{|\underline{e}|} \\
                 \theta & =2 \arctan \left(\frac{|\underline{e}|}{e_0}\right) \quad \text { with } \quad \underline{e}^t=\left\langle e_1, e_2, e_3\right\rangle^t 
         \end{aligned}
-        \label{quaternionToAxisAngle-Equation}
 \right.
 $$
 
